@@ -131,7 +131,7 @@ public class MainPerEsercizi
         for(Child c:children)
         {
             List<Present> regali = childIdToPresents.get(c.getId());
-            c.setReceivedPresents(presents);
+            c.setReceivedPresents(regali);
             for(Present p:regali)
                 p.setChild(c);
         }
@@ -139,7 +139,7 @@ public class MainPerEsercizi
         for(Adult a:adults)
         {
             List<Present> regali = adultIdToPresents.get(a.getId());
-            a.setGivenPresents(presents);
+            a.setGivenPresents(regali);
             for(Present p:regali)
                 p.setAdult(a);
         }
