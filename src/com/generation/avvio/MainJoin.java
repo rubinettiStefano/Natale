@@ -1,12 +1,16 @@
-package com.generation.entities;
+package com.generation.avvio;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.time.LocalDate;
 
+import com.generation.entities.Adult;
+import com.generation.entities.Child;
+import com.generation.entities.Present;
 import com.generation.library.Console;
 import com.generation.library.List;
+import com.generation.library.Map;
 import com.generation.util.DbUtil;
 
 public class MainJoin 
