@@ -79,6 +79,15 @@ public class Adult
         this.ral = ral;
     }
 
+    public double getTotalPresentsPrice()
+    {
+        double res =0;
+        for(Present p:givenPresents)
+            res+=p.getPrice();
+
+        return res;
+    }
+
     @Override
     public String toString() {
         return "Adult [id=" + id + ", name=" + name + ", surname=" + surname + ", dob=" + dob + ", ral=" + ral + "]";
